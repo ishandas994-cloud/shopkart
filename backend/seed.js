@@ -334,3 +334,19 @@ const products = [
     tags: ["furniture", "shelf", "storage"]
   },
   {
+       name: "Havells Ceiling Fan 1200mm",
+    description: "Energy-efficient BLDC motor ceiling fan with remote control, 5 speed settings, timer function, and aerodynamic blades for maximum air delivery.",
+    price: 4999, discountPrice: 3799, category: "Home", brand: "Havells",
+    stock: 90, ratings: 4.4, numReviews: 18000, featured: false,
+    images: [{ public_id: "havells_fan", url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" }],
+    tags: ["fan", "havells", "ceiling fan"]
+  },
+  {
+    name: "Bombay Dyeing Bedsheet Set",
+    description: "100% cotton double bedsheet with 2 pillow covers. 186 thread count, reactive print, easy wash and quick dry fabric. King size.",
+    price: 1999, discountPrice: 1299, category: "Home", brand: "Bombay Dyeing",
+    stock: 250, ratings: 4.2, numReviews: 31000, featured: false,
+    images: [{ public_id: "bedsheet", url: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800" }],
+    tags: ["bedsheet", "cotton", "bedroom"]
+  },
+ 
