@@ -292,4 +292,45 @@ const products = [
     images: [{ public_id: "deep_work", url: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=800" }],
     tags: ["productivity", "focus", "self-help"]
   },
- 
+   // Home (7)
+  {
+    name: "Dyson V12 Cordless Vacuum",
+    description: "Lightweight cordless vacuum with laser dust detection, 60-minute runtime, HEPA filtration and LCD screen showing live performance data.",
+    price: 52900, discountPrice: 44900, category: "Home", brand: "Dyson",
+    stock: 25, ratings: 4.8, numReviews: 3400, featured: false,
+    images: [{ public_id: "dyson_v12", url: "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800" }],
+    tags: ["vacuum", "dyson", "cleaning"]
+  },
+  {
+    name: "Philips Air Fryer HD9200",
+    description: "1400W digital air fryer with Rapid Air technology, 4.1L capacity, 7 presets, and up to 90% less fat than traditional frying. Healthy cooking made easy.",
+    price: 8995, discountPrice: 6499, category: "Home", brand: "Philips",
+    stock: 80, ratings: 4.5, numReviews: 28000, featured: true,
+    images: [{ public_id: "philips_airfryer", url: "https://images.unsplash.com/photo-1648170645659-31b4b19f0b3f?w=800" }],
+    tags: ["airfryer", "kitchen", "cooking"]
+  },
+  {
+    name: "Prestige Induction Cooktop",
+    description: "2000W induction cooktop with 8 power levels, 7 preset menus, feather touch controls, automatic voltage regulation, and child lock safety feature.",
+    price: 3995, discountPrice: 2799, category: "Home", brand: "Prestige",
+    stock: 120, ratings: 4.3, numReviews: 41000, featured: false,
+    images: [{ public_id: "prestige_induction", url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800" }],
+    tags: ["induction", "kitchen", "cooking"]
+  },
+  {
+    name: "Amazon Echo Dot 5th Gen",
+    description: "Smart speaker with Alexa, improved audio with deeper bass, built-in temperature sensor, motion detection and eero Built-in Wi-Fi support.",
+    price: 4499, discountPrice: 2999, category: "Home", brand: "Amazon",
+    stock: 200, ratings: 4.4, numReviews: 56000, featured: false,
+    images: [{ public_id: "echo_dot", url: "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800" }],
+    tags: ["alexa", "smart home", "speaker"]
+  },
+  {
+    name: "IKEA KALLAX Shelf Unit",
+    description: "Versatile shelf unit that can be used as a room divider or against a wall. 8 compartments for books, plants and decorative boxes.",
+    price: 8999, discountPrice: 7499, category: "Home", brand: "IKEA",
+    stock: 35, ratings: 4.6, numReviews: 12000, featured: false,
+    images: [{ public_id: "ikea_kallax", url: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800" }],
+    tags: ["furniture", "shelf", "storage"]
+  },
+  {
