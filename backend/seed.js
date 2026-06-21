@@ -227,4 +227,18 @@ const products = [
     images: [{ public_id: "vanheusen_chino", url: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800" }],
     tags: ["trousers", "chino", "formal"]
   },
- 
+  // Books (8)
+  {
+    name: "Clean Code by Robert C. Martin",
+    description: "A handbook of agile software craftsmanship. Learn to write code that is readable, maintainable, and elegant. A must-read for every developer.",
+    price: 2499, discountPrice: 1599, category: "Books", brand: "Pearson",
+    stock: 200, ratings: 4.8, numReviews: 45000, featured: true,
+    images: [{ public_id: "clean_code", url: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800" }],
+    tags: ["programming", "coding", "software"]
+  },
+  {
+    name: "Atomic Habits by James Clear",
+    description: "An easy and proven way to build good habits and break bad ones. Learn the four laws of behavior change to transform your life one tiny habit at a time.",
+    price: 799, discountPrice: 499, category: "Books", brand: "Penguin",
+    stock: 500, ratings: 4.9, numReviews: 120000, featured: true,
+    images: [{ public_id: "atomic_habits", url: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800" }],
