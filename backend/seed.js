@@ -242,3 +242,54 @@ const products = [
     price: 799, discountPrice: 499, category: "Books", brand: "Penguin",
     stock: 500, ratings: 4.9, numReviews: 120000, featured: true,
     images: [{ public_id: "atomic_habits", url: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800" }],
+    tags: ["self-help", "habits", "productivity"]
+  },
+  {
+    name: "The Alchemist by Paulo Coelho",
+    description: "A magical story about following your dreams and listening to your heart. One of the best-selling books of all time translated into 80+ languages.",
+    price: 299, discountPrice: 199, category: "Books", brand: "HarperCollins",
+    stock: 600, ratings: 4.7, numReviews: 280000, featured: false,
+    images: [{ public_id: "alchemist", url: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800" }],
+    tags: ["fiction", "motivation", "classic"]
+  },
+  {
+    name: "System Design Interview",
+    description: "An insider's guide to system design interviews. Covers scalable system design concepts with real-world examples from top tech companies.",
+    price: 2999, discountPrice: 1999, category: "Books", brand: "ByteByteGo",
+    stock: 150, ratings: 4.8, numReviews: 18000, featured: false,
+    images: [{ public_id: "system_design", url: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800" }],
+    tags: ["programming", "interview", "system design"]
+  },
+  {
+    name: "Rich Dad Poor Dad",
+    description: "What the rich teach their kids about money that the poor and middle class do not. The #1 personal finance book of all time by Robert Kiyosaki.",
+    price: 399, discountPrice: 249, category: "Books", brand: "Plata Publishing",
+    stock: 400, ratings: 4.6, numReviews: 190000, featured: false,
+    images: [{ public_id: "rich_dad", url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800" }],
+    tags: ["finance", "money", "self-help"]
+  },
+  {
+    name: "Zero to One by Peter Thiel",
+    description: "Notes on startups and how to build the future. Essential reading for entrepreneurs and innovators on creating monopolies and building great companies.",
+    price: 599, discountPrice: 399, category: "Books", brand: "Crown Business",
+    stock: 250, ratings: 4.5, numReviews: 34000, featured: false,
+    images: [{ public_id: "zero_to_one", url: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800" }],
+    tags: ["startup", "entrepreneurship", "business"]
+  },
+  {
+    name: "JavaScript: The Good Parts",
+    description: "Douglas Crockford distills JavaScript to its essential goodness. Learn the elegant, lightweight and highly expressive language within the language.",
+    price: 1799, discountPrice: 1199, category: "Books", brand: "O'Reilly",
+    stock: 180, ratings: 4.5, numReviews: 22000, featured: false,
+    images: [{ public_id: "js_good_parts", url: "https://images.unsplash.com/photo-1555066931-4365d14431b9?w=800" }],
+    tags: ["javascript", "programming", "web"]
+  },
+  {
+    name: "Deep Work by Cal Newport",
+    description: "Rules for focused success in a distracted world. Learn how to cultivate deep focus and produce better work in less time in our age of distraction.",
+    price: 599, discountPrice: 399, category: "Books", brand: "Grand Central",
+    stock: 300, ratings: 4.7, numReviews: 67000, featured: false,
+    images: [{ public_id: "deep_work", url: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=800" }],
+    tags: ["productivity", "focus", "self-help"]
+  },
+ 
