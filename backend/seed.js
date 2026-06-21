@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
- 
+
 dotenv.config();
- 
+
 const productSchema = new mongoose.Schema(
   {
     name: String,
@@ -20,9 +20,9 @@ const productSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
- 
+
 const Product = mongoose.model("Product", productSchema);
- 
+
 const products = [
   // Electronics (15)
   {
@@ -145,7 +145,7 @@ const products = [
     images: [{ public_id: "realme_watch", url: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" }],
     tags: ["smartwatch", "realme", "wearable"]
   },
- 
+
   // Clothing (10)
   {
     name: "Nike Air Max 270",
@@ -227,6 +227,7 @@ const products = [
     images: [{ public_id: "vanheusen_chino", url: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800" }],
     tags: ["trousers", "chino", "formal"]
   },
+
   // Books (8)
   {
     name: "Clean Code by Robert C. Martin",
@@ -292,7 +293,8 @@ const products = [
     images: [{ public_id: "deep_work", url: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=800" }],
     tags: ["productivity", "focus", "self-help"]
   },
-   // Home (7)
+
+  // Home (7)
   {
     name: "Dyson V12 Cordless Vacuum",
     description: "Lightweight cordless vacuum with laser dust detection, 60-minute runtime, HEPA filtration and LCD screen showing live performance data.",
@@ -334,7 +336,7 @@ const products = [
     tags: ["furniture", "shelf", "storage"]
   },
   {
-       name: "Havells Ceiling Fan 1200mm",
+    name: "Havells Ceiling Fan 1200mm",
     description: "Energy-efficient BLDC motor ceiling fan with remote control, 5 speed settings, timer function, and aerodynamic blades for maximum air delivery.",
     price: 4999, discountPrice: 3799, category: "Home", brand: "Havells",
     stock: 90, ratings: 4.4, numReviews: 18000, featured: false,
@@ -349,4 +351,107 @@ const products = [
     images: [{ public_id: "bedsheet", url: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800" }],
     tags: ["bedsheet", "cotton", "bedroom"]
   },
- 
+
+  // Sports (5)
+  {
+    name: "Boldfit Yoga Mat 6mm",
+    description: "Premium anti-slip yoga mat with alignment lines, carrying strap, and 6mm extra thick cushioning for joints. Non-toxic, eco-friendly TPE material.",
+    price: 1299, discountPrice: 799, category: "Sports", brand: "Boldfit",
+    stock: 400, ratings: 4.3, numReviews: 24000, featured: false,
+    images: [{ public_id: "yoga_mat", url: "https://images.unsplash.com/photo-1601925228209-91f01cac9de2?w=800" }],
+    tags: ["yoga", "fitness", "mat"]
+  },
+  {
+    name: "Decathlon Adjustable Dumbbell Set",
+    description: "10kg adjustable dumbbell pair with chrome handles and rubber-coated weight plates. Compact design for home workouts with weight markings.",
+    price: 2999, discountPrice: 2199, category: "Sports", brand: "Decathlon",
+    stock: 100, ratings: 4.4, numReviews: 8700, featured: false,
+    images: [{ public_id: "dumbbells", url: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800" }],
+    tags: ["dumbbell", "gym", "fitness"]
+  },
+  {
+    name: "Nivia Football Size 5",
+    description: "32-panel hand-stitched football with polyurethane cover, latex bladder for consistent bounce, and thermally bonded seams for durability. FIFA approved.",
+    price: 999, discountPrice: 699, category: "Sports", brand: "Nivia",
+    stock: 300, ratings: 4.2, numReviews: 15000, featured: false,
+    images: [{ public_id: "football", url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" }],
+    tags: ["football", "soccer", "sport"]
+  },
+  {
+    name: "Yonex Badminton Racket",
+    description: "Yonex Astrox series badminton racket with graphite shaft, T-joint construction, and isometric head shape for a larger sweet spot. Intermediate level.",
+    price: 3499, discountPrice: 2499, category: "Sports", brand: "Yonex",
+    stock: 80, ratings: 4.5, numReviews: 11000, featured: false,
+    images: [{ public_id: "badminton", url: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800" }],
+    tags: ["badminton", "yonex", "racket"]
+  },
+  {
+    name: "Skybags Hiking Backpack 45L",
+    description: "45L capacity hiking backpack with padded shoulder straps, multiple compartments, rain cover, laptop sleeve, and hydration bladder compatibility.",
+    price: 2999, discountPrice: 1999, category: "Sports", brand: "Skybags",
+    stock: 120, ratings: 4.1, numReviews: 6700, featured: false,
+    images: [{ public_id: "backpack", url: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800" }],
+    tags: ["backpack", "hiking", "travel"]
+  },
+
+  // Beauty (3)
+  {
+    name: "Philips Hair Dryer BHC010",
+    description: "1800W ionic hair dryer with ThermoProtect technology, 2 speed settings, 3 heat settings, cool shot button and concentrator nozzle.",
+    price: 2595, discountPrice: 1799, category: "Beauty", brand: "Philips",
+    stock: 150, ratings: 4.4, numReviews: 19000, featured: false,
+    images: [{ public_id: "hair_dryer", url: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=800" }],
+    tags: ["hair dryer", "philips", "beauty"]
+  },
+  {
+    name: "Maybelline Fit Me Foundation",
+    description: "Lightweight liquid foundation with SPF 18, natural finish, 12-hour wear and 40 shades to match every skin tone. Oil-free formula.",
+    price: 599, discountPrice: 399, category: "Beauty", brand: "Maybelline",
+    stock: 300, ratings: 4.3, numReviews: 45000, featured: false,
+    images: [{ public_id: "foundation", url: "https://images.unsplash.com/photo-1631214503851-25e3f2b26a75?w=800" }],
+    tags: ["makeup", "foundation", "beauty"]
+  },
+  {
+    name: "The Ordinary Niacinamide 10%",
+    description: "High-strength vitamin and mineral blemish formula with 10% Niacinamide and 1% Zinc. Reduces appearance of blemishes and congestion.",
+    price: 699, discountPrice: 549, category: "Beauty", brand: "The Ordinary",
+    stock: 250, ratings: 4.6, numReviews: 38000, featured: false,
+    images: [{ public_id: "niacinamide", url: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800" }],
+    tags: ["skincare", "serum", "beauty"]
+  },
+
+  // Toys (2)
+  {
+    name: "LEGO Classic Creative Bricks",
+    description: "790 piece classic creative brick set for kids aged 4 and up. Build houses, vehicles, animals and anything you can imagine. Develops creativity.",
+    price: 3999, discountPrice: 2999, category: "Toys", brand: "LEGO",
+    stock: 60, ratings: 4.8, numReviews: 28000, featured: false,
+    images: [{ public_id: "lego", url: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800" }],
+    tags: ["lego", "kids", "building"]
+  },
+  {
+    name: "Hot Wheels 20 Car Gift Pack",
+    description: "20 die-cast 1:64 scale Hot Wheels cars in a collector gift pack. Assorted models from muscle cars to exotic sports cars. Ages 3 and up.",
+    price: 1299, discountPrice: 899, category: "Toys", brand: "Hot Wheels",
+    stock: 150, ratings: 4.5, numReviews: 32000, featured: false,
+    images: [{ public_id: "hot_wheels", url: "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=800" }],
+    tags: ["hotwheels", "cars", "kids"]
+  },
+];
+
+const seed = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("MongoDB connected");
+    await Product.deleteMany({});
+    console.log("Cleared existing products");
+    const inserted = await Product.insertMany(products);
+    console.log(`✅ Successfully seeded ${inserted.length} products!`);
+    process.exit(0);
+  } catch (err) {
+    console.error("Seed error:", err.message);
+    process.exit(1);
+  }
+};
+
+seed();
